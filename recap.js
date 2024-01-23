@@ -49,6 +49,20 @@ console.log(fullNameUpper);
 console.log(fullName.charAt(0) !== "m"); // true
 console.log(fullName.toLocaleLowerCase().charAt(0) === "m"); // true
 
+// Operatori logici
+// && - AND concatena due o più condizioni in un'unica espressione,
+// la cui veridicità sarà confermata SOLAMENTE se TUTTE le condizioni sono verificate (TRUE && TRUE = TRUE)
+// || - OR concatena due o più condizioni in un'unica espressione,
+// la cui veridicità sarà confermata quando ALMENO UNA delle condizioni sarà verificata (FALSE || TRUE = TRUE)
+// ! - NOT trasforma il valore booleano nel suo opposto !false = true
+
+const eyeColor = "brown";
+console.log("Op.Logico1: ", 5 < 10 && eyeColor === "brown");
+console.log("Op.Logico2: ", 10 < 10 && eyeColor === "brown");
+console.log("Op.Logico3: ", 10 < 10 || eyeColor === "brown");
+console.log("Op.Logico4: ", (10 < 10 || eyeColor === "brown") && eyeColor !== "black");
+// possibile raggruppare le condizioni per dargli una priorità(o ordine) di valutazione specifica
+
 // LET vs CONST
 let randNum; // solo variabili dichiarate con let possono essere inizializzate senza valore
 randNum = 10;
