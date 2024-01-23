@@ -86,7 +86,15 @@ console.log("Is student admitted?", admitted);
 
 const message = eyesColor === "green" ? "lo studente ha gli occhi verdi" : "lo studente ha gli occhi di un altro colore, non verdi";
 
+// VALORI che in un contesto booleano ritornano TRUE (TRUTHY)
+// {}, [], 42, "0", "false", new Date(), -42, 12n, 3.14, -3.14, Infinity, -Infinity;
+// https://developer.mozilla.org/en-US/docs/Glossary/Truthy
+
 const truthy = "stefano" ? "VERO" : "FALSO";
+
+// VALORI che in un contesto booleano ritornano FALSE (FALSY)
+// null, undefined, false, NaN, 0, -0, 0n, ""
+// https://developer.mozilla.org/en-US/docs/Glossary/Falsy
 const falsy = "" ? "VERO" : "FALSO";
 
 console.log("truthy", truthy);
