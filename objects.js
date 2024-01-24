@@ -22,9 +22,11 @@ const teacher = {
   skills: ["HTML", "CSS", "JS"],
   "e-mail": "stefano@epicode.com"
 };
-
+const has = "has";
+const location = "location";
 // teacher = null; // non si può riassegnare il valore di una costante, ma si può modificare l'entità-oggetto nelle sue parti interne
-
+console.log("hasWebcam", teacher[has + "Webcam"]); // teacher["hasWebcam"]
+console.log("hasWebcam", teacher[location]); // teacher["location"]
 console.log("teacher", teacher);
 
 // come si accede alle proprietà degli oggetti?
@@ -47,7 +49,7 @@ console.log(propertyName, teacher[propertyName]); // console.log("skills", teach
 // const newObj = {
 //   [dynamicProperty]: dynamicValue
 // };
-// console.log(newObj);
+// console.log(newObj); // { school: "Epicode" }
 
 // per MODIFICARE un valore esistente:
 // accedo alla proprietà da modificare e ne RIASSEGNO il valore (=)
@@ -104,7 +106,7 @@ teacher3.location.region = "Lazio";
 
 console.log("TEACHER3", teacher3);
 
-// METODO 3# con structuredClone()
+// METODO 3# CLONAZIONE PROFONDA con structuredClone()
 
 const teacher4 = structuredClone(teacher2);
 teacher3.name = "Paolo";
